@@ -1,0 +1,45 @@
+.footer {
+  padding: 20px 0;
+  background: rgba($color: #000000, $alpha: 0.7);
+  color: #ffffff;
+  margin-top: -65px;
+
+  @media (max-width: 590px) {
+    margin-top: -90px;
+  }
+
+  @media (max-width: 340px) {
+    margin-top: -115px;
+  }
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1314px;
+  padding: 0 25px;
+
+  @media (max-width: 590px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.footer__copy-link {
+  @media (hover: hover) {
+    &:hover {
+      text-decoration: underline;
+      color: inherit;
+    }
+  }
+}
+.footer__terms {
+  @media (hover: hover) {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
